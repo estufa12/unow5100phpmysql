@@ -24,7 +24,7 @@ void setup() {
   if (client.connect(server, 80)) {
     Serial.println("connected");
     // Make a HTTP request:
-    client.println("GET /arduino/salvardados.php?sensor1=11.1&sensor2=22.1&sensor3=33.1");
+    client.println("GET /arduino/salvardados.php?sensor1=11.1&sensor2=22.1&sensor3=33.1 HTTP/1.1");
     client.println("Host: verde.96.lt");
     client.println("Connection: close");
     client.println();
